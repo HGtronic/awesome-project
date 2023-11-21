@@ -1,0 +1,21 @@
+{
+  "name": "@hgtronic/awesome-project",
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "pnpm --stream -r run start:dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "pnpm": {
+    "overrides": {
+      "merge-deep@3.0.3>clone-deep": "4.0.1"
+    }
+  }
+}
